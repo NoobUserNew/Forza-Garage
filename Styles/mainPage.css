@@ -1,0 +1,488 @@
+body::-webkit-scrollbar {
+    width: 6px;
+}
+  
+body::-webkit-scrollbar-track {
+    background-color: #4e4d4d;
+}
+  
+body::-webkit-scrollbar-thumb {
+    background-color: rgb(45, 45, 46);
+    border-radius: 20px;
+}
+.container {
+    transition: all 1s ease;
+    background: #181818;
+    margin: 0 auto;
+}
+
+.header {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    background-color: rgba(24, 24, 24, 0.8);
+    height: 125px;
+    width: 100%;
+}
+
+.header-block {
+    width: 1420px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    gap: 720px;
+}
+
+.buttons {
+    width: 400px;
+    height: 52px;
+    display: flex;
+    gap: 25px;
+}
+
+.background-header{
+    width: 100%;
+    height: 100%;
+}
+
+.button-authorization {
+    display: flex;
+    gap: 10px;
+    padding-top: 3px;
+    justify-content: center;
+    align-items: center;
+    width: 151px;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: transparent;
+    font-family: sans-serif;
+    color: #f6f6f6;
+    text-decoration: none;
+    border: 3px solid #f6f6f6;
+    border-radius: 12px; 
+    transition: all .3s ease;
+    z-index: 3;
+}
+
+.button-authorization::before {
+    content: url(../img/icons/AuthorizationIcon/authorization.png);
+}
+
+.button-authorization:hover {
+    color: #B8B8B8;
+    border: 3px solid #B8B8B8;
+    transition: all .3s ease;
+}
+
+.button-authorization:hover::before {
+    content: url(../img/icons/AuthorizationIcon/account_hover.png);
+    transition: all .3s ease;
+}
+
+.button-authorization:active {
+    background-color: #f6f6f6;
+    color: #000;
+    transition: all .1s ease;
+}
+
+.button-authorization:active::before {
+    content: url(../img/icons/AuthorizationIcon/authorization_click.png);
+    transition: all .1s ease;
+}
+
+
+.button-register {
+    display: flex;
+    gap: 10px;
+    padding-top: 3px;
+    align-items: center;
+    justify-content: center;
+    width: 225px;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    font-family: sans-serif;
+    color: #181818;
+    background: #f6f6f6;
+    border-radius: 12px;
+    transition: all .3s ease;
+    z-index: 3;
+}
+
+.button-register:hover {
+    background: #B8B8B8;
+    transition: all .3s ease;
+}
+
+.button-register::before {
+    content: url(../img/icons/RegisterIcon/RegisterDefault.png);
+    transition: all .1s ease;
+}
+
+.button-register:active {
+    color: #f6f6f6;
+    background: linear-gradient(45deg,#F47443, #E62D79);
+    transition: all .1s ease;
+}
+
+.button-register:active::before {
+    content: url(../img/icons/RegisterIcon/RegisterDefault2.png);
+    transition: all .1s ease;
+}
+
+.text {
+    position: absolute;
+    bottom: 320px;
+    left: 180px; 
+    width: 1240px;
+    height: 200px;
+}
+
+.text-block {
+    display: flex;
+    gap: 90px;
+    align-items: center;
+    max-width: 1240px;
+    max-height: 200px;
+    font-size: 36px;
+    color: #fff;
+    font-family: sans-serif;
+}
+
+.gradient-up {
+    position: absolute;
+    bottom: -100px;
+    z-index: 1;
+    width: 100%;
+    height: 600px;
+    background: linear-gradient(transparent, black);
+}
+
+.gradient-down {
+    position: absolute;
+    width: 100%;
+    height: 140px;
+    background: linear-gradient(black, transparent);
+}
+
+.cars {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 430px);
+    margin: 0 auto;
+    width: 1420px;
+    height: 1600px;
+}
+
+.cars-img {
+    position: absolute;
+    width: 686px;
+    height: 380px;
+}
+
+.cars-item {
+    margin-top: 50px;
+}
+
+.cars-text {
+    position: absolute;
+    margin-top: 245px;
+    margin-left: 45px;
+    padding-bottom: 25px;
+    width: 600px;
+    color: #f6f6f6;
+    font-family: sans-serif;
+}
+
+.cars-title {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 48px;
+    font-weight: 600;
+}
+
+.cars-sub-text {
+    margin: 0;
+    color: #f6f6f6;
+    text-decoration: none;
+    font-size: 24px;
+    font-family: sans-serif;
+    transition: all 1s ease;
+}
+
+.cars-sub-text:hover {
+    margin-left: 100px;
+    transition: all 1s ease;
+}
+
+.footer {
+    display: flex;
+    height: 130px;
+    margin-top: 200px;
+    align-items: center;
+}
+
+.footer-text-block {
+    width: 1420px;
+    height: 60px;
+    display: flex;
+    gap: 515px;
+    margin: 0 auto;
+    font-size: 24px;
+    color: #fff;
+    font-weight: 600;
+    font-family: sans-serif;
+}
+
+@media (max-width: 1024px) {
+
+    body {
+        overflow-x: hidden;
+    }
+
+    .container {
+        width: 1024px;
+    }
+
+    .header {
+        height: 90px;
+    }
+
+    .header-block {
+        width: 1024px;
+        gap: 450px;
+    }
+
+    .logo-header {
+        width: 200px;
+        height: 40px;
+    }
+
+    .buttons {
+        width: 280px;
+        height: 40px;
+        gap: 15px;
+    }
+
+    .button-authorization {
+        gap: 5px;
+        width: 110px;
+        font-size: 14px;
+        padding-bottom: 2px;
+    }
+
+   .button-authorization::before {
+        content: url(../img/icons/AuthorizationIcon/authorization_tablet.png);
+    }
+
+    .button-authorization:hover {
+        color: #B8B8B8;
+        border: 3px solid #B8B8B8;
+        transition: all .3s ease;
+    }
+    
+    .button-authorization:hover::before {
+        content: url(../img/icons/AuthorizationIcon/authorization_tablet_hover.png); 
+        display: flex;
+        transition: all .3s ease;
+    }
+
+    .button-authorization:active {
+        color: #000;
+        transition: all .1s ease;
+    }
+
+    .button-authorization:active::before {
+        content: url(../img/icons/AuthorizationIcon/authorization_click_tablet.png);
+        transition: all .1s ease;
+    }
+
+    .button-register {
+        width: 160px;
+        font-size: 14px;
+        gap: 5px;
+    }
+
+    .button-register:hover {
+        background: #B8B8B8;
+        transition: all .3s ease;
+    }
+    
+    .button-register::before {
+        content: url(../img/icons/RegisterIcon/register_tablet.png);
+        transition: all .1s ease;
+    }
+    
+    .button-register:active {
+        color: #f6f6f6;
+        background: linear-gradient(45deg,#F47443, #E62D79);
+        transition: all .1s ease;
+    }
+
+    .button-register:active::before {
+        content: url(../img/icons/RegisterIcon/register_click_tablet.png);
+    }
+
+    .background-header {
+        width: 1024px;
+    }
+
+    .text {
+        width: 1024px;
+        height: 100px;
+        bottom: 450px;
+        left: 130px;
+    }
+
+    .text-block {
+        width: 800px;
+        height: 100px;
+        font-size: 18px;
+        gap: 150px;
+    }
+
+    .text-block img {
+        width: 265px;
+        height: 100px;
+    }
+
+    .gradient-up {
+        width: 1024px;
+        height: 250px;
+        bottom: 190px;
+    }
+
+    .gradient-down {
+        width: 1014px;
+        height: 150px;
+        bottom: 50px;
+    }
+
+    .cars {
+        width: 1024px;
+        height: 960px;
+        margin-left: 130px;
+        grid-template-columns: repeat(2, 450px);
+        grid-template-rows: repeat(4, 230px);
+
+    }
+
+    .cars-img {
+        margin: 0a;
+        width: 330px;
+        height: 180px;
+    }
+
+    .cars-title {
+        position: relative;
+        bottom: 120px;
+        font-size: 24px;
+        right: 30px;
+    }
+
+    .cars-sub-text {
+        display: none;
+    }
+
+    .footer {
+        margin-top: 0;
+    }
+
+    .footer-text-block {
+        font-size: 16px;
+        align-items: center;
+        justify-content: center;
+        gap: 200px;
+    }
+
+    .footer-logo {
+        width: 200px;
+        height: 40px;
+    }
+}
+
+@media (max-width: 500px) {
+
+    .header {
+        width: 500px;
+        height: 100px;
+    }
+
+    .header-block {
+        width: 480px;
+        gap: 200px;    
+    }
+
+    .logo-header {
+        position: relative;
+        left: 180px;
+        width: 200px;
+        height: 40px;
+    }
+
+    .background-header {
+        margin-top: 100px;
+        width: 500px;
+    }
+
+    .button-authorization {
+        height: 50px;
+        margin-bottom: 10px;
+    }
+
+    .button-register {
+        height: 50px;
+    }
+
+    .buttons {
+        display: block;
+        width: 400px;
+        height: 400px;
+        position: relative;
+        top: 340px;
+        right: 50px;
+        z-index: 5;
+    }
+
+    .text-block {
+        position: relative;
+        bottom: 45px;
+        right: 90px;
+        display: block;
+        width: 250px;
+        height: 400px;
+        font-size: 14px;
+    }
+
+    .text-block img {
+        width: 200px;
+        height: 80px;
+    }
+
+    .gradient-up {
+        display: none;
+    }
+
+    .gradient-down {
+        display: none;
+    }
+
+    .cars {
+        width: 500px;
+        height: 2000px;
+        display: flex;
+        flex-direction: column;
+        gap: 200px;
+        margin-left: 85px;
+    }
+
+    .footer {
+        width: 500px;
+    }
+
+    .footer-text-block {
+        gap: 50px;
+    }
+}

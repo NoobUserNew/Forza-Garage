@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../Styles/normalize.css">
+    <link rel="stylesheet" href="../../Styles/authorizationPage.css">
+    <title>Authorization</title>
+</head>
+<body>
+    <video class="background" muted autoplay loop>
+        <source src="../../img/backgrounds/background.mp4" type="video/mp4">
+    </video>
+    <video class="background_tablet" muted autoplay loop>
+        <source src="../../img/backgrounds/background_tablet.mp4" type="video/mp4">
+    </video>
+    <div class="container-autho">
+        <a href="../mainPage/index.html">
+            <img class="logo-autho" src="../../img/icons/Logo/Midlogo.png" alt="">
+        </a>
+        <img class="line" src="../../img/Line2.png" alt="">
+        <form id="Authorization" action="#">
+            <label for="nick">Логин</label>
+            <input id="nick" type="text">
+            <label for="Password">Пароль</label>
+            <input id="Password" type="password">
+            <button type="submit">Войти</button>
+        </form>
+    </div>
+
+    <script src="../../js/authorization.js"></script>
+</body>
+</html>
